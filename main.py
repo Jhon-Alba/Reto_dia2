@@ -26,7 +26,7 @@ def ingresar_usuario(numero):
         print("Los apellidos deben tener entre 5 y 50 caracteres.")
         apellidos = input("Ingrese sus apellidos: ")
 
-    telefono = input("Ingrese su número de teléfono: ")
+    telefono = input("Ingrese su número de teléfono(10 digitos): ")
     while not validar_telefono(telefono):
         print("El número de teléfono debe tener exactamente 10 dígitos.")
         telefono = input("Ingrese su número de teléfono: ")
@@ -52,6 +52,7 @@ def main():
         print(f"\nUsuario {i}")
         print(f"Bienvenido, {usuario[0]}, {usuario[1]}")
         print(f"En breve recibiras un correo a: {usuario[3]}")
+        print(f"Usuario registrado, su ID es: {i}")
 
 
 if __name__ == "__main__":
